@@ -172921,6 +172921,7 @@
 											"model": {
 												"$ref": "AAAAAAGWrA8ApqQDBv4="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 1621,
@@ -172934,7 +172935,7 @@
 									"left": 1616,
 									"top": 1087,
 									"width": 196.6259765625,
-									"height": 83
+									"height": 68
 								}
 							],
 							"font": "Arial;13;0",
@@ -172942,7 +172943,7 @@
 							"left": 1616,
 							"top": 1064,
 							"width": 196.6259765625,
-							"height": 106,
+							"height": 96,
 							"nameLabel": {
 								"$ref": "AAAAAAGWrANwu6PNVw0="
 							},
@@ -175146,7 +175147,7 @@
 									"font": "Arial;13;1",
 									"parentStyle": true,
 									"left": 528,
-									"top": 381,
+									"top": 357,
 									"width": 226.97412109375,
 									"height": 13,
 									"text": "project_document"
@@ -175173,7 +175174,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 533,
-											"top": 404,
+											"top": 380,
 											"width": 216.97412109375,
 											"height": 13
 										},
@@ -175189,7 +175190,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 533,
-											"top": 419,
+											"top": 395,
 											"width": 216.97412109375,
 											"height": 13
 										},
@@ -175205,7 +175206,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 533,
-											"top": 434,
+											"top": 410,
 											"width": 216.97412109375,
 											"height": 13
 										},
@@ -175221,7 +175222,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 533,
-											"top": 449,
+											"top": 425,
 											"width": 216.97412109375,
 											"height": 13
 										}
@@ -175229,7 +175230,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": true,
 									"left": 528,
-									"top": 399,
+									"top": 375,
 									"width": 226.97412109375,
 									"height": 68
 								}
@@ -175237,7 +175238,7 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"left": 528,
-							"top": 376,
+							"top": 352,
 							"width": 226.97412109375,
 							"height": 91,
 							"nameLabel": {
@@ -175266,7 +175267,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 665,
+									"left": 633,
 									"top": 545,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -175302,8 +175303,8 @@
 									},
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 665,
-									"top": 486,
+									"left": 633,
+									"top": 462,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -175321,7 +175322,7 @@
 								"$ref": "AAAAAAGWpsBR38H4aHc="
 							},
 							"lineStyle": 2,
-							"points": "565:552;680:552;680:467",
+							"points": "565:552;648:552;648:443",
 							"nameLabel": {
 								"$ref": "AAAAAAGWsRQq8aipjVo="
 							},
@@ -175812,7 +175813,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 656,
+									"left": 655,
 									"top": 265,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -175849,7 +175850,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 656,
-									"top": 344,
+									"top": 320,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -175867,7 +175868,7 @@
 								"$ref": "AAAAAAGWrBnUdqRN0Gw="
 							},
 							"lineStyle": 2,
-							"points": "904:272;641:272;641:376",
+							"points": "904:272;641:272;641:352",
 							"nameLabel": {
 								"$ref": "AAAAAAGWsVIkNaq8kRo="
 							},
@@ -179896,10 +179897,10 @@
 							"_parent": {
 								"$ref": "AAAAAAGWrANwuaPKJtg="
 							},
-							"name": "region",
-							"documentation": "Departamento",
+							"name": "type",
+							"documentation": "----\nValidaciones:\n\n- Debe pertener al enum (REGION, PROVINCE, DISTRICT)",
 							"type": "VARCHAR",
-							"length": "50"
+							"length": "10"
 						},
 						{
 							"_type": "ERDColumn",
@@ -179907,7 +179908,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGWrANwuaPKJtg="
 							},
-							"name": "province",
+							"name": "name",
 							"documentation": "Provincia",
 							"type": "VARCHAR",
 							"length": "50"
@@ -180843,7 +180844,8 @@
 							},
 							"name": "address_reference",
 							"type": "VARCHAR",
-							"length": "200"
+							"length": "200",
+							"nullable": true
 						},
 						{
 							"_type": "ERDColumn",
@@ -180853,7 +180855,7 @@
 							},
 							"name": "address_number",
 							"type": "VARCHAR",
-							"length": "10",
+							"length": "20",
 							"nullable": true
 						},
 						{
