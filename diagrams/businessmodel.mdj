@@ -175225,6 +175225,22 @@
 											"top": 425,
 											"width": 216.97412109375,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGXCEa06xtNKxA=",
+											"_parent": {
+												"$ref": "AAAAAAGWrKFOCqiJ2DQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGXCEa0wxtK5eM="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 533,
+											"top": 440,
+											"width": 216.97412109375,
+											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
@@ -175232,7 +175248,7 @@
 									"left": 528,
 									"top": 375,
 									"width": 226.97412109375,
-									"height": 68
+									"height": 83
 								}
 							],
 							"font": "Arial;13;0",
@@ -175240,7 +175256,7 @@
 							"left": 528,
 							"top": 352,
 							"width": 226.97412109375,
-							"height": 91,
+							"height": 106,
 							"nameLabel": {
 								"$ref": "AAAAAAGWrKFOCqiIL9I="
 							},
@@ -175304,7 +175320,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 633,
-									"top": 462,
+									"top": 477,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -175322,7 +175338,7 @@
 								"$ref": "AAAAAAGWpsBR38H4aHc="
 							},
 							"lineStyle": 2,
-							"points": "565:552;648:552;648:443",
+							"points": "565:552;648:552;648:458",
 							"nameLabel": {
 								"$ref": "AAAAAAGWsRQq8aipjVo="
 							},
@@ -180810,7 +180826,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGWrCyd3KTnkGI="
 							},
-							"name": "klm_url",
+							"name": "kml_kmz_url",
 							"documentation": "Url de klm de google para visualizar en el mapa",
 							"type": "VARCHAR",
 							"length": "1000"
@@ -181427,6 +181443,16 @@
 							},
 							"name": "creation_date",
 							"type": "DATETIME"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGXCEa0wxtK5eM=",
+							"_parent": {
+								"$ref": "AAAAAAGWrKFOCaiF7HE="
+							},
+							"name": "name",
+							"type": "VARCHAR",
+							"length": "100"
 						}
 					]
 				},
